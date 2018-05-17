@@ -37,5 +37,30 @@
 		  </center>
 		</div>
 		<br><br><br><br>
+
+		<script>
+			function openNav() {
+			    document.getElementById("mySidenav").style.width = "250px";
+			    document.getElementById("main").style.marginLeft = "250px";
+			    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+			    //document.getElementById("formdiv").style.backgroundColor = "rgba(0,0,0,0.4)";
+			    document.getElementById("exampleInputEmail1").disabled = true;
+			    document.getElementById("exampleInputEmail1").style.backgroundColor = "rgba(0,0,0,0.0)";
+			    document.getElementById("exampleInputEmail1").style.border = "rgba(0,0,0,0)";
+
+			     
+			}
+
+			function closeNav() {
+			    document.getElementById("mySidenav").style.width = "0";
+			    document.getElementById("main").style.marginLeft= "0";
+			    document.body.style.backgroundColor = "white";
+			    //document.getElementById("formdiv").style.backgroundColor = "rgba(0,0,0,0)";
+			    //document.getElementById("exampleInputEmail1").disabled = false;
+			    //document.getElementById("exampleInputEmail1").style.backgroundColor = "white";
+			    //document.getElementById("exampleInputEmail1").style.border = "rgba(204,204,204,1);";
+			     
+			}
+		</script>
 	</body>
 </html>
