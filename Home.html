@@ -25,7 +25,7 @@
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acesso Síndico<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			            <li><a href="#" id="newOrder">Cadastra Conta</a></li>
-			            <li><a href="Login.html">Abrir Postagem</a></li>
+			            <li><a href="#" id="postMsg">Cadastrar Postagem</a></li>
 			          </ul>
 			        </li>
 				</div>
@@ -118,10 +118,16 @@
 					closeNav();
 				});
 
-				 $("#newOrder").click(function(){
+				$("#newOrder").click(function(){
 					$("#fullbody").load("CadastrarContaPagar-min.html");
 					closeNav();
 				});
+
+				$("#postMsg").click(function(){
+					$("#fullbody").load("CadastrarPostagens-min.html");
+					closeNav();
+				});
+
 
 			}
 
