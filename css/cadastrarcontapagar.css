@@ -1,0 +1,31 @@
+	#rodape{
+	    background-color: #f8f8f8;
+	}
+	
+	#logo{
+		max-width: 30%;
+	}
+
+	#containerlogo{
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+
+	#imgtext{
+	    max-width: 38px;
+	    max-height: 38px;
+	    padding-right: 3px;
+	}
+
+	#btncadastrar{
+		font-size: 18px;	
+	}
+
+	#btncancelar{
+		font-size: 18px;	
+	}
+
+
+/*	.navbar-nav {
+    margin: -3px -93px;
+	}*/

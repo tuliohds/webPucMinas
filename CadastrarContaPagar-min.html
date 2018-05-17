@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DIDEE - Gestão de Condomínio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/cadastrarcontapagar.css" rel="stylesheet">
+</head>
+	<body>
+		<div class="container-fluid">
+
+			<div>
+				<img align="left" class="img-responsive" src="img/iconcontaapagar.png" id="imgtext">
+				<h2>CADASTRAR NOVA CONTA A PAGAR</h2>
+			</div>
+
+			<div class="row">
+		    	<div class='col-sm-5'>
+					<div class="form-group">
+					  <label for="sel1">Selecione o síndico responsável:</label>
+					  <select class="form-control" id="sel1">
+					  </select>
+					</div>
+				</div>
+		        <div class='col-sm-4'>
+		        	<label for="comment">CNPJ do fornecedor:</label>
+		            <div class="form-group">
+		                <div class='input-group date' id='datetimepicker1'>
+		                    <input type='text' class="form-control" placeholder="Ex.: 000.000.000-00" />
+		                </div>
+		            </div>
+		        </div>
+		       	<div class='col-sm-3'>
+		       		<label for="comment">VALOR:</label>
+		            <div class="form-group">
+		                <div class='input-group date' id='datetimepicker1'>
+		                    <input type='text' class="form-control" placeholder="Ex.: R$ 0,00"/>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+
+			<div class="form-group">
+				<label for="comment">Descreva a conta ser paga:</label>
+				<textarea class="form-control" rows="3" id="comment"></textarea>
+			</div>
+
+		    <div class="row">
+		        <div class='col-sm-4'>
+		        	<label for="comment">Data de emissão:</label>
+		            <div class="form-group">
+		                <div class='input-group date' id='datetimepicker1'>
+		                    <input type='text' class="form-control" placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off" />
+		                    <span class="input-group-addon">
+		                        <span class="glyphicon glyphicon-calendar"></span>
+		                    </span>
+		                </div>
+		            </div>
+		        </div>
+		       	<div class='col-sm-4'>
+		       		<label for="comment">Data de lançamento:</label>
+		            <div class="form-group">
+		                <div class='input-group date' id='datetimepicker1'>
+		                    <input type='text' class="form-control" placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off" />
+		                    <span class="input-group-addon">
+		                        <span class="glyphicon glyphicon-calendar"></span>
+		                    </span>
+		                </div>
+		            </div>
+		        </div>
+		        <div class='col-sm-4'>
+		        	<label for="comment">Data de Vencimento:</label>
+		            <div class="form-group">
+		                <div class='input-group date' id='datetimepicker1' >
+		                    <input type='text' class="form-control" placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off" />
+		                    <span class="input-group-addon">
+		                        <span class="glyphicon glyphicon-calendar"></span>
+		                    </span>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<br>
+		<div class="container">    
+		  <center>
+		  	<button id="btncadastrar" type="button" class="btn btn-primary">CADASTRAR</button>
+		  	<button id="btncancelar" type="button" class="btn btn-danger">CANCELAR</button>
+		  </center>
+		</div>
+		<br><br><br><br>
+	</body>
+</html>

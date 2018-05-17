@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DIDEE - Gestão de Condomínio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/usuarios.css" rel="stylesheet">
+</head>
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="Home.html">DIDDE</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contas a pagar <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		          	<li><a href="#">Visualizar Contas</a></li>
+		            <li><a href="CadastrarContaPagar.html">Cadastrar Novas</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Postagens <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="postagens.html">Vizualizar postagens</a></li>
+		            <li><a href="CadastrarPostagens.html">Cadastrar nova</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item">
+		        	<a class="nav-link" href="Usuarios.html">Usuarios</a>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ações <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Ajuda</a></li>
+		            <li><a href="Login.html">Sair</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container-fluid">
+			<div class="container">
+			  <div>
+				<img align="left" class="img-responsive" src="img/iconpostagem.png" id="imgtext">
+				<h2>Usuarios</h2>
+			  </div>
+<!-- 		  <div class="row">
+			  <div class="container-fluid"> -->
+				  <div class="col-sm-12">
+				  	<p>Listagem de usuarios cadastrados no sistema:</p>
+				  </div>
+				  <!-- <div class="col-sm-3">
+				  	<a href="CadastrarUsuarios.html">
+				  		<button id="btncadastrar" type="button" class="btn btn-primary">CADASTRAR NOVO USUARIO</button>
+				  	</a>
+				  </div>
+				</div>
+			  </div>   -->       
+			  <table class="table table-striped">
+			    <thead>
+			      <tr>
+			      	<th></th>
+			        <th>Login</th>
+			        <th>Nome</th>
+			        <th>CPF</th>
+			        <th>Email</th>
+			        <th>Telefone</th>
+			        <th>Data nascimento</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			      	<td><img src="img/lixeira.png" id="imglixeira"></td>
+			        <td>João</td>
+			        <td>Joao Xavier</td>
+			        <td>241.348.253-93</td>
+			        <td>joaoxavier@example.com</td>
+			        <td>(31)97587-9380</td>
+			        <td>14/02/1990</td>
+			      </tr>
+			      <tr>
+			      	<td><img src="img/lixeira.png" id="imglixeira"></td>
+			        <td>João</td>
+			        <td>Joao Xavier</td>
+			        <td>241.348.253-93</td>
+			        <td>joaoxavier@example.com</td>
+			        <td>(31)97587-9380</td>
+			        <td>14/02/1990</td>
+			      </tr>
+			      <tr>
+			      	<td><img src="img/lixeira.png" id="imglixeira"></td>
+			        <td>João</td>
+			        <td>Joao Xavier</td>
+			        <td>241.348.253-93</td>
+			        <td>joaoxavier@example.com</td>
+			        <td>(31)97587-9380</td>
+			        <td>14/02/1990</td>
+			      </tr>
+			    </tbody>
+			  </table>
+			</div>
+		</div>
+
+		<br><br><br><br>
+		<div class="row">
+			<footer class="footer navbar-fixed-bottom" id="rodape">
+				<center>
+					<h5>@Copyright - todos os direitos reservados</h5>
+				</center>
+			</footer>
+		</div>
+	</body>
+</html>
