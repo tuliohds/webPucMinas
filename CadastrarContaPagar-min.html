@@ -17,72 +17,66 @@
 				<h2>CADASTRAR NOVA CONTA A PAGAR</h2>
 			</div>
 
-			<div class="row">
-		    	<div class='col-sm-5'>
-					<div class="form-group">
-					  <label for="sel1">Selecione o síndico responsável:</label>
-					  <select class="form-control" id="sel1">
-					  </select>
-					</div>
-				</div>
-		        <div class='col-sm-4'>
-		        	<label for="comment">CNPJ do fornecedor:</label>
-		            <div class="form-group">
-		                <div class='input-group date' id='datetimepicker1'>
-		                    <input type='text' class="form-control" placeholder="Ex.: 000.000.000-00" />
-		                </div>
-		            </div>
-		        </div>
-		       	<div class='col-sm-3'>
-		       		<label for="comment">VALOR:</label>
-		            <div class="form-group">
-		                <div class='input-group date' id='datetimepicker1'>
-		                    <input type='text' class="form-control" placeholder="Ex.: R$ 0,00"/>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
+			<form>
+						<div class="form-group">
+							<div class="input-group">
+								<label for="sindico">Sindico Responsável</label>
+								<input type="text" class="form-control" id="fullname" value="" disabled>
+							</div>
+							<div class="input-group">	
+								<label for="personid">CNPJ Fornecedor </label>
+								<input type="text" class="form-control" id="personid" placeholder="Somente Números">
+							</div>
+							<div class="input-group">	
+								<label for="nomeid">Razao Social</label>
+								<input type="text" class="form-control" id="personid" placeholder="Razaosocial">
+							</div>
+							<div class="input-group">	
+								<label for="vlrTotal">Valor do titulo:</label>
+								<input type="number" class="form-control" id="personid" placeholder="00,00">
+							</div>
+							<div class="input-group">	
+								<label for="dataemissao">Data do Emissão</label>
+								<input type="date" class="form-control" id="dtemissao" placeholder="dd/mm/yyyy" data-mask="00/00/0000">
+							</div>
+							<div class="input-group">	
+								<label for="datavencimento">Data de Vencimento</label>
+								<input type="date" class="form-control" id="dtvenc" placeholder="dd/mm/yyyy" data-mask="00/00/0000">
+							</div>
+							<div class="input-group">	
+								<label for="datalancamento">Data de Lançamento</label>
+								<input type="date" class="form-control" id="dtlanc" placeholder="dd/mm/yyyy" data-mask="00/00/0000">
+							</div>
+							<div class="input-group">	
+								<label for="centroCusto">Centro de Custo</label>
+								<select class="form-control" id="centroCusto">
+							        <option>Conta de Luz</option>
+							        <option>Conta de água</option>
+							        <option>Conta do Gás</option>
+							    	<option>Manutenção de Elevador</option>
+							    	<option>Manutenção de Portões</option>
+							    	<option>Manutenção de Área Comum</option>
+							    	<option>Limpeza e Portaria</option>
+							    </select>	
+							</div>
+						</div>	
+						<br>
+						<hr>
+						<div class="form-group">
+							<div class="input-group">
+								<label for="login">Login</label>
+								<input type="text" class="form-control email" id="exampleInputEmail1">
+							</div>	
+							<div class="input-group">
+								<label for="pwd">Senha</label>
+								<input type="password" class="form-control" id="exampleInputEmail1">
+							</div>
+								
+								
+								
+						</div>
+					</form>
 
-			<div class="form-group">
-				<label for="comment">Descreva a conta ser paga:</label>
-				<textarea class="form-control" rows="3" id="comment"></textarea>
-			</div>
-
-		    <div class="row">
-		        <div class='col-sm-4'>
-		        	<label for="comment">Data de emissão:</label>
-		            <div class="form-group">
-		                <div class='input-group date' id='datetimepicker1'>
-		                    <input type='text' class="form-control" placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off" />
-		                    <span class="input-group-addon">
-		                        <span class="glyphicon glyphicon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
-		        </div>
-		       	<div class='col-sm-4'>
-		       		<label for="comment">Data de lançamento:</label>
-		            <div class="form-group">
-		                <div class='input-group date' id='datetimepicker1'>
-		                    <input type='text' class="form-control" placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off" />
-		                    <span class="input-group-addon">
-		                        <span class="glyphicon glyphicon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
-		        </div>
-		        <div class='col-sm-4'>
-		        	<label for="comment">Data de Vencimento:</label>
-		            <div class="form-group">
-		                <div class='input-group date' id='datetimepicker1' >
-		                    <input type='text' class="form-control" placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off" />
-		                    <span class="input-group-addon">
-		                        <span class="glyphicon glyphicon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
 		</div>
 		<br>
 		<div class="container">    
